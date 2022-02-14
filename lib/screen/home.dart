@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  static String id ='/home';
 
+  const HomeScreen({Key? key}) : super(key: key); //1.Create Constructor
+
+  @override //2.build
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      //backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.indigo,
         title: Text("Flutter App"),
         centerTitle: true,
       ),
@@ -15,159 +18,224 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             ListTile(
-              title: Text("Mark Suckerberg"),
+              title: Text("Mark Sakaberg"),
               subtitle: Text("Facebook to Meta Verse"),
-              leading: Icon(Icons.account_circle, color: Colors.cyan, size: 40),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
               trailing: IconButton(
                   onPressed: () {
-                    print("Test ListTitle");
+                    print("Test trailing");
                   },
                   icon: Icon(Icons.delete)),
               onTap: () {
-                print("Test ");
+                print("Test onTap");
               },
             ),
             ListTile(
-              title: Text("Mark Suckerberg"),
+              title: Text("Mark Sakaberg"),
               subtitle: Text("Facebook to Meta Verse"),
-              leading: Icon(Icons.account_circle, color: Colors.cyan, size: 40),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
               trailing: IconButton(
                   onPressed: () {
-                    print("Test ListTitle");
+                    print("Test trailing");
                   },
                   icon: Icon(Icons.delete)),
               onTap: () {
-                print("Test ");
+                print("Test onTap");
               },
             ),
             ListTile(
-              title: Text("Mark Suckerberg"),
+              title: Text("Mark Sakaberg"),
               subtitle: Text("Facebook to Meta Verse"),
-              leading: Icon(Icons.account_circle, color: Colors.cyan, size: 40),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
               trailing: IconButton(
                   onPressed: () {
-                    print("Test ListTitle");
+                    print("Test trailing");
                   },
                   icon: Icon(Icons.delete)),
               onTap: () {
-                print("Test ");
+                print("Test onTap");
               },
             ),
             ListTile(
-              title: Text("Mark Suckerberg"),
+              title: Text("Mark Sakaberg"),
               subtitle: Text("Facebook to Meta Verse"),
-              leading: Icon(Icons.account_circle, color: Colors.cyan, size: 40),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
               trailing: IconButton(
                   onPressed: () {
-                    print("Test ListTitle");
+                    print("Test trailing");
                   },
                   icon: Icon(Icons.delete)),
               onTap: () {
-                print("Test ");
+                print("Test onTap");
               },
             ),
             ListTile(
-              title: Text("Mark Suckerberg"),
+              title: Text("Mark Sakaberg"),
               subtitle: Text("Facebook to Meta Verse"),
-              leading: Icon(Icons.account_circle, color: Colors.cyan, size: 40),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
               trailing: IconButton(
                   onPressed: () {
-                    print("Test ListTitle");
+                    print("Test trailing");
                   },
                   icon: Icon(Icons.delete)),
               onTap: () {
-                print("Test ");
+                print("Test onTap");
               },
             ),
             ListTile(
-              title: Text("Mark Suckerberg"),
+              title: Text("Mark Sakaberg"),
               subtitle: Text("Facebook to Meta Verse"),
-              leading: Icon(Icons.account_circle, color: Colors.cyan, size: 40),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
               trailing: IconButton(
                   onPressed: () {
-                    print("Test ListTitle");
+                    print("Test trailing");
                   },
                   icon: Icon(Icons.delete)),
               onTap: () {
-                print("Test ");
+                print("Test onTap");
               },
             ),
             ListTile(
-              title: Text("Mark Suckerberg"),
+              title: Text("Mark Sakaberg"),
               subtitle: Text("Facebook to Meta Verse"),
-              leading: Icon(Icons.account_circle, color: Colors.cyan, size: 40),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
               trailing: IconButton(
                   onPressed: () {
-                    print("Test ListTitle");
+                    print("Test trailing");
                   },
                   icon: Icon(Icons.delete)),
               onTap: () {
-                print("Test ");
+                print("Test onTap");
               },
             ),
             ListTile(
-              title: Text("Mark Suckerberg"),
+              title: Text("Mark Sakaberg"),
               subtitle: Text("Facebook to Meta Verse"),
-              leading: Icon(Icons.account_circle, color: Colors.cyan, size: 40),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
               trailing: IconButton(
                   onPressed: () {
-                    print("Test ListTitle");
+                    print("Test trailing");
                   },
                   icon: Icon(Icons.delete)),
               onTap: () {
-                print("Test ");
+                print("Test onTap");
               },
             ),
             ListTile(
-              title: Text("Mark Suckerberg"),
+              title: Text("Mark Sakaberg"),
               subtitle: Text("Facebook to Meta Verse"),
-              leading: Icon(Icons.account_circle, color: Colors.cyan, size: 40),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
               trailing: IconButton(
                   onPressed: () {
-                    print("Test ListTitle");
+                    print("Test trailing");
                   },
                   icon: Icon(Icons.delete)),
               onTap: () {
-                print("Test ");
+                print("Test onTap");
               },
             ),
             ListTile(
-              title: Text("Mark Suckerberg"),
+              title: Text("Mark Sakaberg"),
               subtitle: Text("Facebook to Meta Verse"),
-              leading: Icon(Icons.account_circle, color: Colors.cyan, size: 40),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
               trailing: IconButton(
                   onPressed: () {
-                    print("Test ListTitle");
+                    print("Test trailing");
                   },
                   icon: Icon(Icons.delete)),
               onTap: () {
-                print("Test ");
+                print("Test onTap");
               },
             ),
             ListTile(
-              title: Text("Mark Suckerberg"),
+              title: Text("Mark Sakaberg"),
               subtitle: Text("Facebook to Meta Verse"),
-              leading: Icon(Icons.account_circle, color: Colors.cyan, size: 40),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
               trailing: IconButton(
                   onPressed: () {
-                    print("Test ListTitle");
+                    print("Test trailing");
                   },
                   icon: Icon(Icons.delete)),
               onTap: () {
-                print("Test ");
+                print("Test onTap");
               },
             ),
             ListTile(
-              title: Text("Mark Suckerberg"),
+              title: Text("Mark Sakaberg"),
               subtitle: Text("Facebook to Meta Verse"),
-              leading: Icon(Icons.account_circle, color: Colors.cyan, size: 40),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
               trailing: IconButton(
                   onPressed: () {
-                    print("Test ListTitle");
+                    print("Test trailing");
                   },
                   icon: Icon(Icons.delete)),
               onTap: () {
-                print("Test ");
+                print("Test onTap");
+              },
+            ),
+            ListTile(
+              title: Text("Mark Sakaberg"),
+              subtitle: Text("Facebook to Meta Verse"),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
+              trailing: IconButton(
+                  onPressed: () {
+                    print("Test trailing");
+                  },
+                  icon: Icon(Icons.delete)),
+              onTap: () {
+                print("Test onTap");
+              },
+            ),
+            ListTile(
+              title: Text("Mark Sakaberg"),
+              subtitle: Text("Facebook to Meta Verse"),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
+              trailing: IconButton(
+                  onPressed: () {
+                    print("Test trailing");
+                  },
+                  icon: Icon(Icons.delete)),
+              onTap: () {
+                print("Test onTap");
+              },
+            ),
+            ListTile(
+              title: Text("Mark Sakaberg"),
+              subtitle: Text("Facebook to Meta Verse"),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
+              trailing: IconButton(
+                  onPressed: () {
+                    print("Test trailing");
+                  },
+                  icon: Icon(Icons.delete)),
+              onTap: () {
+                print("Test onTap");
+              },
+            ),
+            ListTile(
+              title: Text("Mark Sakaberg"),
+              subtitle: Text("Facebook to Meta Verse"),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
+              trailing: IconButton(
+                  onPressed: () {
+                    print("Test trailing");
+                  },
+                  icon: Icon(Icons.delete)),
+              onTap: () {
+                print("Test onTap");
+              },
+            ),
+            ListTile(
+              title: Text("Mark Sakaberg"),
+              subtitle: Text("Facebook to Meta Verse"),
+              leading: Icon(Icons.account_circle, color: Colors.indigo, size: 40),
+              trailing: IconButton(
+                  onPressed: () {
+                    print("Test trailing");
+                  },
+                  icon: Icon(Icons.delete)),
+              onTap: () {
+                print("Test onTap");
               },
             ),
           ],
@@ -177,10 +245,10 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.teal,
         child: Icon(Icons.message),
         onPressed: () {
-          print("Add");
+          print("Test");
         },
       ),
-      drawer: Drawer(),
+      //drawer: Drawer(),
     );
   }
 }

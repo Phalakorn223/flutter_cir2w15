@@ -1,26 +1,104 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_basic/screen/second_screen.dart';
+import 'package:flutter_basic/screen/home.dart';
+import 'package:flutter_basic/screen/stateful.dart';
+import 'contact.dart';
+import 'second_screen.dart';
 
-class FirstScreen extends StatelessWidget{
-  const FirstScreen ({Key? key}) : super(key: key);
-
+class FirstScreen extends StatefulWidget {
   @override
-  Widget build(BuildContext context){
+  State<FirstScreen> createState() => _FirstScreenState();
+}
+
+class _FirstScreenState extends State<FirstScreen> {
+  //const FirstScreen({Key? key}):super(key: key); //1.Create constructor
+  int _index = 0;
+
+  List pages = [
+    HomeScreen(),
+    Contact(),
+    StatefulScreen(),
+  ];
+
+  @override //2.build
+  Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("First Screen"),
-        centerTitle: true,
-      ),
-      body: Center(
-        // child: Text("Phalakorn"),
-        child: ElevatedButton(
-          child: Text("ไปหน้าต่อไป"),
-          onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder:(context) => const SecondScreen()));
-            //Navigator.pop(context);
-          },
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            UserAccountsDrawerHeader(
+              accountName: Text("Android"),
+              accountEmail: Text("android@gmail.com"),
+              currentAccountPicture: CircleAvatar(
+                child: Icon(Icons.android),
+              ),
+            ),
+            ListTile(
+              title: Text("Home"),
+              leading: Icon(Icons.home),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomeScreen(),
+                    ));
+              },
+            ),
+            ListTile(
+              title: Text("First Screen"),
+              leading: Icon(Icons.send),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => FirstScreen(),
+                    ));
+              },
+            ),
+            ListTile(
+              title: Text("Second Screen"),
+              leading: Icon(Icons.account_balance),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SecondScreen(),
+                    ));
+              },
+            ),
+            ListTile(
+              title: Text("Contact Us"),
+              leading: Icon(Icons.call),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Contact(),
+                    ));
+              },
+            ),
+          ],
         ),
       ),
+      // appBar: AppBar(
+      //   title: Text("First Screen"),
+      //   centerTitle: true,
+      // ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.contacts), label: "Contact"),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Users"),
+        ],
+        onTap: (index) {
+          print(index);
+          setState(() {
+            _index = index;
+          });
+        },
+      ),
+      body: pages[_index],
     );
   }
 }
