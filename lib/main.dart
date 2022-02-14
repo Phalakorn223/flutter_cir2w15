@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic/screen/first_screen.dart';
 import 'package:flutter_basic/screen/home.dart';
+import 'package:flutter_basic/screen/second_screen.dart';
 import 'screen/contact.dart';
 import 'screen/stateful.dart';
 
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // theme: ThemeData(primarySwatch: Colors.cyan),
       title: "Flutter App",
-      home: StatefulScreen(),
+      home: SecondScreen(),
     );
   }
 }
